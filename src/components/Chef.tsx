@@ -1,5 +1,4 @@
 import chef from "../assets/img/chef.svg"
-import chefNoArrow from "../assets/img/chefNoArrow.svg"
 import chefMobile from "../assets/img/chefMobile.svg"
 import Phone from "../assets/img/phone.svg"
 import Hour from "../assets/img/24hour.svg"
@@ -33,10 +32,9 @@ const service = [
     },
 ]
 export const Chef = () => {
-    return <div className="relative flex flex-col mdd:flex-row  mdd:items-center ">
+    return <div id="whyfoodhub" className="relative flex flex-col mdd:flex-row  mdd:items-center ">
         <div className="relative transition-transform -translate-y-[15%]  xs:-translate-y-[18%] sm:-translate-y-[20%]  md:-translate-y-[10%] -z-10">
             <img src={chef} className=" hidden md:block w-[70%] h-[70%] lg:w-[80%] lg:h-[80%] desktop:w-full desktop:h-full object-cover" alt="" />
-            {/* <img src={chefNoArrow} className="block md:hidden -mt-10  w-[100%]  object-cover" alt="" /> */}
             <img src={chefMobile} className="md:hidden -mt-10 block w-[100%]  object-cover" alt="" />
             <div className=" -mt-[100%] px-10 md:mt-0 md:px-0 md:absolute top-[33%] left-[48%] lg:left-[58%] desktop:left-[76%] 
              md:w-[50%] chefContain:w-[80%] h-fit  lg:pr-5 xl:pr-0 ">
@@ -51,7 +49,7 @@ export const Chef = () => {
 
                 <button className="hidden md:block mdd:hidden bottom-[-24px] w-fit rounded-full h-[46px] px-5 text-white bg-red_1">About Us</button>
 
-                <div className="grid md:hidden mdd:grid xs:grid-cols-2 gap-y-3      sm:gap-[20px] mdd:gap-[15px] desktop:gap-[29px] lg:pr-0">
+                <div className="grid md:hidden mdd:grid xs:grid-cols-2 gap-y-3 sm:gap-[20px] mdd:gap-[15px] desktop:gap-[29px] lg:pr-0">
                     {service.map((item, index) => (
                         <div key={index} className="w-full sm:w-[300px] flex gap-[6px]">
                             <img src={item.icon} alt="" />

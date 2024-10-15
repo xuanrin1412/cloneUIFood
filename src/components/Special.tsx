@@ -47,7 +47,7 @@ const data = [
     },
 ]
 const Special = () => {
-    return <div className="relative px-[34px] sm:px-10 desktop:px-0 z-50">
+    return <div id="todaySpecial" className="relative px-[34px] sm:px-10 desktop:px-0 z-30">
         <img src={CircleDot} className="absolute hidden mdd:block top-[60px] left-0" alt="" />
         <img src={Rosemary} className="absolute hidden mdd:block bottom-[-140px] right-0" alt="" />
         <div className=" max-w-[1300px] mx-auto">
@@ -58,7 +58,8 @@ const Special = () => {
             </div>
             <div className="relative grid  sm:grid-cols-2 lg:grid-cols-4 gap-[18px] gap-y-16">
                 {data.map((item, index) => (
-                    <div key={index} className={`relative h-[498px] max-w-[312px] ${index % 2 ? "md:mr-auto" : "md:ml-auto"} ${index === 0 ? "flex mx-auto md:mx-0" : "hidden sm:flex"}   flex-col   items-center`}>
+                    <div key={index} className={`relative h-[498px] max-w-[312px] ${index % 2 ? "md:mr-auto" : "md:ml-auto"} flex mx-auto md:mx-0
+                    flex-col items-center`}>
                         <div className="absolute bottom-0 left-0 h-full w-full  ">
                             <img src={layerRed} className="w-full h-full object-cover" alt="" />
                         </div>
@@ -74,11 +75,11 @@ const Special = () => {
                         <div className="flex items-center pb-[30px]">
                             <div className="flex w-fit ">
                                 {item.commener.map((item, index) => {
-                                    return <>
+                                    return <div key={index}>
                                         <div className={`p-[2px] transition-transform ${index == 1 ? "-translate-x-1/2" : index == 2 ? "-translate-x-full" : ""}  h-[38px] w-[38px] rounded-full bg-white`}>
                                             <img className="h-full w-full object-cover rounded-full" src={item} alt="" />
                                         </div>
-                                    </>
+                                    </div>
                                 })}
                             </div>
                             <div className="flex pl-1 transition-transform -translate-x-1/2 gap-2">
