@@ -9,7 +9,6 @@ const categorysTitle = ["Ramen", "Breakfast", "Lunch", "Dinner", "Maxican", "Ita
 const Category = () => {
     const [activeCategory, setActiveCategory] = useState<string>(categorysTitle[0])
     const setCategoryActive = (item: string) => {
-        console.log(item);
         setActiveCategory(item)
     }
 
