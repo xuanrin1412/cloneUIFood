@@ -41,7 +41,7 @@ function App() {
           className="z-50 h-12 w-12 p-2 fixed bottom-20 right-10 hover:bg-gray-100 bg-white rounded-full border-2 border-black shadow-lg cursor-pointer"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
-          <img src={Up} alt="Scroll to top" />
+          <img src={Up} loading="lazy" alt="Scroll to top" />
         </div>
       )}
     </div>

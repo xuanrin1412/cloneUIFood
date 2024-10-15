@@ -32,19 +32,19 @@ const Category = () => {
                 </div>
             </div>
             <div className="relative px-10 desktop:px-0 grid sm:grid-cols-2 lg:grid-cols-4 gap-x-[18px] gap-y-16  xl:gap-y-84 ">
-                <img className="absolute top-0 left-0" src="" alt="" />
+                <img loading="lazy" className="absolute top-0 left-0" src="" alt="" />
                 {dataFilered.map((item, index) => (
                     // {`relative h-[498px] max-w-[312px] ${index % 2 ? "md:mr-auto" : "md:ml-auto"} flex mx-auto md:mx-0
                     // flex-col items-center`}
                     <div key={index} className={`relative h-[498px] max-w-[312px]  ${index % 2 ? "md:mr-auto" : "md:ml-auto"}  mx-auto md:mx-0 flex flex-col gap-y-84  items-center`}>
                         <div className="absolute bottom-0 left-0   ">
-                            <img src={layerRed} className="" alt="" />
+                            <img loading="lazy" src={layerRed} className="" alt="" />
                         </div>
                         <div className="relative h-[248.31px] w-[248.31px] flex items-center justify-center ">
                             <div className="w-[197px] h-[197px]">
-                                <img className="rounded-full h-full w-full object-cover" src={item.image} alt="" />
+                                <img loading="lazy" className="rounded-full h-full w-full object-cover" src={item.image} alt="" />
                             </div>
-                            <div className="absolute top-0"><img src={roundOrange} alt="" /></div>
+                            <div className="absolute top-0"><img loading="lazy" src={roundOrange} alt="" /></div>
                             <div className="absolute bottom-[19px] right-[40px] h-[60px] w-[60px] flex items-center justify-center rounded-full  bg-white ">
                                 <div className="bg-yellow_1 p-3  rounded-full text-lg text-white">{item.price}$</div>
                             </div>
@@ -54,13 +54,13 @@ const Category = () => {
                                 {item.commener.map((item, index) => {
                                     return <div key={index}>
                                         <div className={`p-[2px] transition-transform ${index == 1 ? "-translate-x-1/2" : index == 2 ? "-translate-x-full" : ""}  h-[38px] w-[38px] rounded-full bg-white`}>
-                                            <img className="h-full w-full object-cover rounded-full" src={item} alt="" />
+                                            <img loading="lazy" className="h-full w-full object-cover rounded-full" src={item} alt="" />
                                         </div>
                                     </div>
                                 })}
                             </div>
                             <div className="flex pl-1 transition-transform -translate-x-1/2 gap-2">
-                                <div><img src={Star} alt="" /></div>
+                                <div><img loading="lazy" src={Star} alt="" /></div>
                                 <span className="text-lg font-medium">{item.star}</span>
                             </div>
                         </div>

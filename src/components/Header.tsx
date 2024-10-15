@@ -24,8 +24,8 @@ const Header = () => {
         <div className="relative">
             <header className="max-w-[1300px] mx-auto px-6 sm:px-10 desktop:px-0  flex justify-between pt-6 mdd:pt-[32px]">
                 <div className="relative">
-                    <img src={logo} className="w-[97px] h-[62px] sm:w-full sm:h-full" alt="" />
-                    <img className="hidden mdd:block absolute top-[65px] left-[150px]" src={ArrowDown} alt="" />
+                    <img loading="lazy" src={logo} className="w-[97px] h-[62px] sm:w-full sm:h-full" alt="" />
+                    <img loading="lazy" className="hidden mdd:block absolute top-[65px] left-[150px]" src={ArrowDown} alt="" />
                 </div>
                 <div className="flex items-start mdd:pt-1 h-[48px] gap-[45px] pt-[9px] xl:gap-[96px] text-lg">
                     <nav className="self-center hidden lg:flex gap-[50px] pt-[1px]">
@@ -44,13 +44,13 @@ const Header = () => {
                 </div>
             </header>
             <div className="absolute top-0 right-0 -z-20">
-                <img src={BlurHeader} alt="" />
+                <img loading="lazy" src={BlurHeader} alt="" />
             </div>
             <div className="hidden mdd:block absolute top-0 -z-10 right-0">
-                <img src={Nline} alt="" />
+                <img loading="lazy" src={Nline} alt="" />
             </div>
             <div className="flex mdd:hidden -z-10 w-full h-full transition-transform -translate-y-20 ">
-                <img src={EatPizzaMobile} className="w-full -z-10  " alt="" />
+                <img loading="lazy" src={EatPizzaMobile} className="w-full -z-10  " alt="" />
             </div>
 
 

@@ -9,9 +9,9 @@ const Footer = () => {
                 <h2 className="text-4xl text-red_1 font-bold pb-[10px]">Foodhut</h2>
                 <p className="text-lg lg:max-w-[300px] pb-[22px] font-medium text-black_1">Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do  eiusmod tempor </p>
                 <div className="flex gap-[26px] justify-center lg:justify-start">
-                    <img src={Fb} alt="" />
-                    <img src={Ig} alt="" />
-                    <img src={Tw} alt="" />
+                    <img loading="lazy" src={Fb} alt="" />
+                    <img loading="lazy" src={Ig} alt="" />
+                    <img loading="lazy" src={Tw} alt="" />
                 </div>
             </div>
             <div className="flex-1 flex flex-col sm:flex-row  gap-[50px] xl:gap-[94px] justify-center lg:justify-end ">
